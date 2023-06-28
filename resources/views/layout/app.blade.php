@@ -131,44 +131,42 @@
         </div>
 
         <div class="containerPage">
-        <div class="container1">
-        <div class="row row-cols-5 text-center">
-        <a href="./" class="btn_header">Home</a>
-        <a href="./products" class="btn_header">Produtos</a>
-        
-        <a href="./"><img src="{{ asset('./images/logo.png') }}"></img></a>
+            <div class="container1">
+                <div class="row row-cols-5 text-center">
+                    <a href="./" class="btn_header">Home</a>
+                    <a href="./products" class="btn_header">Produtos</a>
+                    
+                    <a href="./"><img src="{{ asset('./images/logo.png') }}"></img></a>
 
-        <a href="./about_us" class="btn_header">Quem Somos</a>
-        <a href="./contact_us" class="btn_header">Contato</a>
+                    <a href="./about_us" class="btn_header">Quem Somos</a>
+                    <a href="./contact_us" class="btn_header">Contato</a>
+                </div>
+            </div>
         </div>
-        </div>
-        </div>
-
-    <div class="containerPage">
     <hr>
-    </div>
 </head>
 
 <body>
-<main>
-    <div class="containerPage">
+<main style="background-color: #f3dbcf !important">
+        <div class="containerPage">
 
-        <div class="cardGenerico text-center">
-            <div class="row">
-                @yield('titulo')
-                <!-- <h1 class="h1_title" style="color: #f3dbcf; padding-bottom: 2rem;">Cadastro</h1> -->
+            <div class="container text-center">
+                <div class="row">
+                    @yield('titulo')
+                    <!-- <h1 class="h1_title" style="color: #f3dbcf; padding-bottom: 2rem;">Cadastro</h1> -->
+                </div>
             </div>
+
+        @yield('content')
+
+        <br /><br /><br />
+
+            <foot>
+                <div class="jumbotron1 jumbotron-fluid" >
+                    <img src="{{ asset('./images/logo1.png') }}"></img>
+                </div>
+            </foot>
         </div>
-
-    @yield('content')
-
-    <br /><br /><br />
-
-    <foot>
-        <div class="jumbotron2 jumbotron-fluid">
-            <img src="{{ asset('./images/logo1.png') }}"></img>
-        </div>
-    </foot>
 
 
 </main>
